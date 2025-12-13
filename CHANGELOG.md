@@ -4,6 +4,33 @@ Change log
 All notable changes to the LaunchDarkly Relay Proxy Helm Chart will be documented in this file. This project adheres to [Semantic Versioning](https://semver.org).
 
 
+## [3.6.0](https://github.com/DrFaust92/ld-relay-helm/compare/3.5.0...3.6.0) (2025-12-13)
+
+
+### Features
+
+* Add commonLabels property ([#77](https://github.com/DrFaust92/ld-relay-helm/issues/77)) ([fd3acfe](https://github.com/DrFaust92/ld-relay-helm/commit/fd3acfe7af1155488ca669f4c28713d7d4dc1302))
+* Add option to define terminationGracePeriodSeconds ([#60](https://github.com/DrFaust92/ld-relay-helm/issues/60)) ([f65b60b](https://github.com/DrFaust92/ld-relay-helm/commit/f65b60b0cc0f1f956e3a951042095583e85cd542))
+* Add pod priorityClassName support ([#53](https://github.com/DrFaust92/ld-relay-helm/issues/53)) ([e28b01b](https://github.com/DrFaust92/ld-relay-helm/commit/e28b01b1b7437332bbb73a522f7b739cb670809d))
+* Add support for container lifecycle hooks ([#57](https://github.com/DrFaust92/ld-relay-helm/issues/57)) ([f47acc6](https://github.com/DrFaust92/ld-relay-helm/commit/f47acc6a94a76c0550dfce2dfb4d5d793bdc9050))
+* Add support for user-defined pod labels ([#30](https://github.com/DrFaust92/ld-relay-helm/issues/30)) ([99e105d](https://github.com/DrFaust92/ld-relay-helm/commit/99e105d998efdb3dde9d6a3448e2b642c111cce8))
+* Add TopologySpreadConstraint and PodDistruptionBudget support ([#47](https://github.com/DrFaust92/ld-relay-helm/issues/47)) ([9bdecf9](https://github.com/DrFaust92/ld-relay-helm/commit/9bdecf9d0a4ef08c94b81850c0cfd81af7b4146a))
+* Default to 7.2.1 version of the relay proxy ([#28](https://github.com/DrFaust92/ld-relay-helm/issues/28)) ([7cd59d5](https://github.com/DrFaust92/ld-relay-helm/commit/7cd59d505e93585fd8e8bcb35ae15d7afb2fec60))
+* Introduce top level pod configuration value ([#31](https://github.com/DrFaust92/ld-relay-helm/issues/31)) ([beb0f9e](https://github.com/DrFaust92/ld-relay-helm/commit/beb0f9efae74be389b40c618275d4138adcaab96))
+* Remove deprecated pod values ([#52](https://github.com/DrFaust92/ld-relay-helm/issues/52)) ([444fc60](https://github.com/DrFaust92/ld-relay-helm/commit/444fc6079a053bd6e218c2ca8a85b3c58e89888b))
+* Support Dynamic EnvFrom existing K8s Secrets ([#45](https://github.com/DrFaust92/ld-relay-helm/issues/45)) ([ae145e8](https://github.com/DrFaust92/ld-relay-helm/commit/ae145e8d7d1460baafc06a6e10c51e05c360a9f4))
+* Support environment variables with reference values ([#35](https://github.com/DrFaust92/ld-relay-helm/issues/35)) ([7d9c1e6](https://github.com/DrFaust92/ld-relay-helm/commit/7d9c1e63c8a97e3c20891c9aa486d54c1eb54ad1))
+* Update default relay to v8.2.0 ([#51](https://github.com/DrFaust92/ld-relay-helm/issues/51)) ([c82d92d](https://github.com/DrFaust92/ld-relay-helm/commit/c82d92d65754939d1609a696eba9adfc45aa17ee))
+
+
+### Bug Fixes
+
+* Allow multiple secrets to be mounted as volumes ([#37](https://github.com/DrFaust92/ld-relay-helm/issues/37)) ([4e9cd5c](https://github.com/DrFaust92/ld-relay-helm/commit/4e9cd5c19f30af59a995f79a5cdb0862d5a1b3ea))
+* Allow overriding scheme for container probes ([#39](https://github.com/DrFaust92/ld-relay-helm/issues/39)) ([846d783](https://github.com/DrFaust92/ld-relay-helm/commit/846d7835103c4ed9a571f2ce050f6492484e4055))
+* Bump default relay proxy version from 8.2.0 to 8.10.5 ([#69](https://github.com/DrFaust92/ld-relay-helm/issues/69)) ([fc4693b](https://github.com/DrFaust92/ld-relay-helm/commit/fc4693babd4db37ba36ffe41ebcea1a72a1f68f6))
+* Correct typo for PodDisruptionBudget ([#75](https://github.com/DrFaust92/ld-relay-helm/issues/75)) ([3042465](https://github.com/DrFaust92/ld-relay-helm/commit/304246580a75e4cda0b5fdbbfb922b1d621a1204))
+* Pass unit tests by fixing golden files ([831fc3f](https://github.com/DrFaust92/ld-relay-helm/commit/831fc3fc654836c8570acc1a4d71f650e024afa8))
+
 ## [3.5.0](https://github.com/DrFaust92/ld-relay-helm/compare/3.4.0...3.5.0) (2025-12-13)
 
 
